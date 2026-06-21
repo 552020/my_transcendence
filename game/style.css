@@ -1,8 +1,10 @@
 /* Game area styles */
 #gameArea {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  width: 800px;
+  height: 600px;
+  background-color: pink;
   position: relative;
   overflow: hidden;
   border: 10px solid white;
@@ -13,7 +15,7 @@
 #ball {
   width: 20px;
   height: 20px;
-  background-color: white;
+  background-color: red;
   position: absolute;
   /* top: 190px; */
   /* left: 390px; */
@@ -21,6 +23,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.paddle {
+  position: absolute;
+  width: 20px;
+  height: 100px; /* Fixed size in pixels */
+  background-color: white;
+}
+
+#leftPaddle {
+  left: 20px;
+}
+
+#rightPaddle {
+  right: 20px;
 }
 
 /* Button styles */
@@ -36,4 +53,16 @@
   border: 2px solid black;
   cursor: pointer;
   font-family: "Press Start 2P", cursive; /* Use the 'Press Start 2P' font */
+}
+
+.debug-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: none;
+}
+
+#blueDot {
+  background-color: blue;
 }
